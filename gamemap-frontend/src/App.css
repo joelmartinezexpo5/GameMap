@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+

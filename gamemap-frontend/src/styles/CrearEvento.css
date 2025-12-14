@@ -1,0 +1,25 @@
+.crear-evento-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.crear-evento-subtitle {
+    font-size: 1rem;
+    color: #cfd3ff;
+}
+
+.crear-banner-card {
+    background-color: #1a0033;
+    border: 2px dashed #b38cff;
+    border-radius: 16px;
+}
+
+.banner-upload-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px dashed #b38cff;
+    border-radius: 12px;
+    padding: 40px;
+    color: #cfd3ff;
+    cursor: pointer;
+}

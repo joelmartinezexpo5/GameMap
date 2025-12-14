@@ -1,0 +1,241 @@
+/* === GENERAL === */
+body {
+    margin: 0;
+    background-color: #0e0b1f;
+    /* fondo púrpura oscuro */
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === NAVBAR === */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #9134E9, #0891B2);
+    /* degradado morado-azul */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard-btn {
+    background: linear-gradient(90deg, #9134E9, #0891B2);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+
+.navbar {
+    background: transparent !important;
+    /* sin fondo */
+    box-shadow: none;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+    max-width: 1200px;
+    /* no ocupa todo el ancho */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.hero-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    background: linear-gradient(90deg, rgb(96, 2, 158) 20%, hotpink 50%, deepskyblue 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cfd3ff;
+}
+
+.cta-btn {
+    background: linear-gradient(90deg, #9134E9, #0891B2);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.login-btn {
+    background: #fff;
+    border: 2px solid #b38cff;
+    /* morado claro */
+    color: #b38cff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+/* === FEATURES SECTION === */
+.features-section {
+    padding: 40px 20px;
+}
+
+.feature-card {
+    background-color: #200F3F;
+    /* morado oscuro */
+    border: 2px solid #3E1E69;
+    /* borde morado claro */
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    height: 100%;
+    /* mismo tamaño */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #C084FC;
+    background: linear-gradient(90deg, #370C5E, #232054);
+    /* mismo fondo que stats-section */
+    padding: 0px 10px 5px 10px;
+    border-radius: 15%;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.3);
+}
+
+.feature-card h5 {
+    font-weight: 900;
+    /* fuente más ancha */
+    font-size: 1.3rem;
+    /* un poco más grande */
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #bfbfbf;
+    /* tono grisáceo */
+}
+
+/* === STATS SECTION === */
+.stats-section {
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(90deg, #370C5E, #232054);
+    border: 1px solid #4F1E7D;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.stats-section h2 {
+    font-size: 3rem;
+    /* más ancho */
+    font-weight: 800;
+}
+
+.stats-section .stat:nth-child(1) h2 {
+    color: #ff66cc;
+    /* rosa/morado */
+}
+
+.stats-section .stat:nth-child(2) h2 {
+    color: #0891B2;
+    /* azul brillante */
+}
+
+.stats-section .stat:nth-child(3) h2 {
+    color: #ff66cc;
+    /* rosa/morado */
+}
+
+.stats-section p {
+    font-size: 1rem;
+    color: #cfd3ff;
+}
+
+/* === CTA SECTION === */
+.cta-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cta-section h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.cta-section p {
+    font-size: 1rem;
+    color: #cfd3ff;
+}
+
+.cta-section .cta-btn {
+    background: linear-gradient(90deg, #9134E9, #0891B2);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: #0a0818;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer h5 {
+    color: #00ffae;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+    color: #cfd3ff;
+}
+
+.footer p {
+    color: #999999;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 40px;
+    margin-right: 10px;
+}

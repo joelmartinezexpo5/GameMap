@@ -1,0 +1,250 @@
+/* === GENERAL === */
+.dashboard-page {
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    padding-bottom: 60px;
+}
+
+/* === HEADER === */
+.dashboard-header {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #cfd3ff;
+    margin-bottom: 20px;
+}
+
+/* === MÉTRICAS PANEL === */
+.metrics-panel {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.metric-box {
+    background: linear-gradient(135deg, #1a0033, #2a0055);
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(127, 0, 255, 0.2);
+}
+
+.metric-number {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #00cfff;
+    margin-bottom: 10px;
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: #cfd3ff;
+    font-weight: 500;
+}
+
+/* === BOTONES FUNCIONALES CON CARD === */
+.feature-card {
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(127, 0, 255, 0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 255, 255, 0.5);
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.feature-subtitle {
+    font-size: 0.9rem;
+    color: #cfd3ff;
+    margin: 0;
+}
+
+.explorar {
+    background: linear-gradient(135deg, #37115A, #58114D);
+    border: 2px solid #6D2585;
+}
+
+.crear {
+    background: linear-gradient(135deg, #17294C, #25246D);
+    border: 2px solid #1E4F8C;
+}
+
+.mensajes {
+    background: linear-gradient(135deg, #172D33, #182D44);
+    border: 2px solid #215952;
+}
+
+.mapa {
+    background: linear-gradient(135deg, #4C1926, #541535);
+    border: 2px solid #8C3132;
+}
+
+.icon {
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.explorar-icon {
+    color: #C084FC;
+    background-color: #541F77;
+}
+
+.crear-icon {
+    color: #22D3EE;
+    background-color: #16446C;
+}
+
+.mensajes-icon {
+    color: #4ADE80;
+    background-color: #1A4A3F;
+}
+
+.mapa-icon {
+    color: #F28B3B;
+    background-color: #722A26;
+}
+
+/* === ORGANIZACIÓN DE EVENTOS === */
+.event-layout {
+    margin-top: 40px;
+}
+
+.event-section h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00ffae;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* === TARJETAS DE EVENTO CON IMAGEN ARRIBA === */
+.event-block-section {
+    background-color: #120028;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.event-block-card {
+    background-color: #1a0033;
+    border: 2px solid #b38cff;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.2);
+    overflow: hidden;
+}
+
+.event-img-top {
+    height: 200px;
+    /* ajusta según prefieras */
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.event-block-card .card-title {
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.event-block-card .card-text {
+    font-size: 0.95rem;
+    color: #bfbfbf;
+}
+
+.label {
+    color: #cfd3ff;
+    font-weight: 600;
+}
+
+.icon-empty {
+    font-size: 3rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.explorar-btn {
+    background: linear-gradient(90deg, #7f00ff, #00cfff);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+/* === SECCIÓN DERECHA DE EVENTOS SIN IMAGEN === */
+.event-side-section {
+    background-color: #120028;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.event-list-card {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.event-list-card .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.event-list-card h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b38cff;
+}
+
+/* === EVENTOS SIMPLES === */
+.event-simple {
+    background-color: #1a0033;
+    border: 2px solid #b38cff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.2);
+}
+
+.event-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.event-detail {
+    font-size: 0.95rem;
+    color: #bfbfbf;
+}
+
+.label {
+    color: #cfd3ff;
+    font-weight: 600;
+}

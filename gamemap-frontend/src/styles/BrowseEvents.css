@@ -1,0 +1,261 @@
+/* === PÁGINA DE EXPLORAR EVENTOS === */
+.browse-events-page {
+    color: #ffffff;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* === ENCABEZADO SIMPLE SIN FONDO === */
+.browse-header-text {
+    padding: 0 10px;
+}
+
+.browse-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.browse-subtitle {
+    font-size: 1rem;
+    color: #cfd3ff;
+    margin-bottom: 0;
+}
+
+.map-button {
+    background: linear-gradient(135deg, #9034E8 0%, #0b90b4 100%);
+    border: transparent;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.map-button:hover {
+    background: linear-gradient(135deg, #9134e8b7 0%, #0b8fb4cb 100%);
+    color: white;
+}
+
+
+
+/* === FILTROS EN UNA LÍNEA === */
+.filters-bar {
+    background: linear-gradient(135deg, #0C0F25 0%, #231044 100%);
+    border: 2px solid #334155;
+    border-radius: 16px;
+    padding: 24px 20px;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(127, 0, 255, 0.2);
+}
+
+/* Buscador */
+.search-wrapper {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #cfd3ff;
+    font-size: 0.95rem;
+}
+
+.search-input {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    color: #ffffff;
+    padding-left: 40px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.search-input::placeholder {
+    color: #cfd3ff;
+}
+
+/* Selects */
+.filter-select {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    color: #ffffff;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.filter-select option {
+    color: #0e0b1f;
+}
+
+/* Separador */
+.filters-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 20px 0;
+}
+
+/* Contador y botón */
+.events-count {
+    background-color: rgba(179, 140, 255, 0.15);
+    color: #b38cff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid rgba(179, 140, 255, 0.35);
+}
+
+.clear-btn {
+    border-color: rgba(179, 140, 255, 0.6);
+    color: #b38cff;
+    font-weight: 500;
+}
+
+.clear-btn:hover {
+    background-color: rgba(179, 140, 255, 0.12);
+}
+
+
+/* === CONTENEDOR DE EVENTOS DISPONIBLES === */
+.event-block-section {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b38cff;
+}
+
+/* === TARJETAS DE EVENTO CON BADGES === */
+.event-card-visual {
+    background: linear-gradient(135deg, #241845 0%, #1D1E3B 100%);
+    ;
+    border: 2px solid #3A2961;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.event-card-visual:hover {
+    transform: translateY(-4px);
+    border-color: #c084fc;
+}
+
+.event-image-wrapper {
+    position: relative;
+}
+
+.event-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* === BADGE DE ESTADO (sobre imagen) === */
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.status-badge.proximo {
+    background-color: rgba(0, 255, 128, 0.1);
+    color: #00ff80;
+    border: 1px solid #00ff80;
+}
+
+.status-badge.cancelado {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
+.status-badge.en {
+    background-color: rgba(255, 255, 0, 0.1);
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+}
+
+/* === BADGE DE TIPO (dentro del contenido) === */
+.type-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.type-badge.torneo {
+    background-color: rgba(179, 140, 255, 0.1);
+    color: #b38cff;
+    border: 1px solid #b38cff;
+}
+
+.type-badge.competitivo {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
+.type-badge.casual {
+    background-color: rgba(0, 191, 255, 0.1);
+    color: #00bfff;
+    border: 1px solid #00bfff;
+}
+
+/* === CONTENIDO DE LA TARJETA === */
+.event-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.event-game {
+    font-size: 0.9rem;
+    color: #C076CE;
+    margin-bottom: 8px;
+}
+
+.event-meta {
+    font-size: 0.85rem;
+    color: #bfbfbf;
+    margin-bottom: 10px;
+}
+
+.event-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 12px 0;
+}
+
+.event-participants {
+    font-size: 0.9rem;
+    color: #cfd3ff;
+    font-weight: 600;
+}
+
+.event-prize {
+    font-size: 0.9rem;
+    color: yellow;
+    font-weight: 600;
+}
